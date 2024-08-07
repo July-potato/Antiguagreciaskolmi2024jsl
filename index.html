@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Antigua Grecia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #1b1e49;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #1b1e49;
+            color: #ffffff;
+        }
+
+        nav {
+            background-color: #1b1e49;
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        article {
+            flex: 3;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #192650;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .grande {
+            font-size: 1.5em;
+        }
+
+        .mediano {
+            font-size: 1.2em;
+        }
+
+        .tabla-temas {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .tabla-temas th, .tabla-temas td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .tabla-temas th {
+            background-color: #1b1e49;
+            color: white;
+        }
+
+        #autor {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #descripcion {
+            font-family: 'Times New Roman', serif;
+        }
+
+        .link-interno, .link-externo {
+            color: #1b1e49;
+            text-decoration: none;
+        }
+
+        .link-interno:hover, .link-externo:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3 fixed-top">
+        <h1>Antigua Grecia</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mt-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">Antigua Grecia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#filosofia">Filosofía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mitologia">Mitología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#arte">Arte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#influencia">Influencia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <main class="col-md-8">
+                <h2 class="grande">Descripción de este Sitio Web</h2>
+                <p id="descripcion">En este sitio web encontrarás información sobre la historia, cultura y legado de la Antigua Grecia.</p>
+                <h2 class="mediano">Temas y Subtemas</h2>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item"><a class="link-interno" href="#historia">Historia de la Antigua Grecia</a></li>
+                    <li class="list-group-item"><a class="link-interno" href="#filosofia">Filosofía Griega</a></li>
+                    <li class="list-group-item"><a class="link-interno" href="#mitologia">Mitología Griega</a></li>
+                    <li class="list-group-item"><a class="link-interno" href="#arte">Arte y Arquitectura</a></li>
+                    <li class="list-group-item"><a class="link-interno" href="#influencia">Influencia en la Actualidad</a></li>
+                </ul>
+                <table class="tabla-temas">
+                    <thead>
+                        <tr>
+                            <th>Temas</th>
+                            <th>Descripción</th>
+                            <th>¡Click para ver la información!</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="historia">Historia de la Antigua Grecia</td>
+                            <td>Desde la Edad Oscura hasta la caída del Imperio Griego.</td>
+                            <td><a class="link-externo" href="https://www.canva.com/design/DAGKj4v2Mnk/D6k8-g91vOhqvI5h7L4fbA/edit?utm_content=DAGKj4v2Mnk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Click para ver más</a></td>
+                        </tr>
+                        <tr>
+                            <td id="filosofia">Filosofía Griega</td>
+                            <td>La evolución del pensamiento filosófico desde Sócrates hasta Aristóteles.</td>
+                            <td><a class="link-externo" href="https://www.canva.com/design/DAGKlwjOlFQ/VVSYOPEILWy5Qmsq_VR7mQ/edit?utm_content=DAGKlwjOlFQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Click para ver más</a></td>
+                        </tr>
+                        <tr>
+                            <td id="mitologia">Mitología Griega</td>
+                            <td>Los mitos y leyendas que conforman la Antigua Grecia.</td>
+                            <td><a class="link-externo" href="https://www.canva.com/design/DAGKm4bc7Ng/CbqGXg3I_9NzUV1GZhdycQ/edit?utm_content=DAGKm4bc7Ng&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Click para ver más</a></td>
+                        </tr>
+                        <tr>
+                            <td id="arte">Arte y Arquitectura</td>
+                            <td>El desarrollo del arte y la arquitectura en la Antigua Grecia.</td>
+                            <td><a class="link-externo" href="https://www.canva.com/design/DAGKgWPQwR0/A9V1fOMNTFozxU-flW_-kA/edit?utm_content=DAGKgWPQwR0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Click para ver más</a></td>
+                        </tr>
+                        <tr>
+                            <td id="influencia">Influencia en la Actualidad</td>
+                            <td>Cómo la cultura griega ha influenciado el mundo moderno.</td>
+                            <td><a class="link-externo" href="https://www.canva.com/design/DAGKnNAKE5c/BOHE3B54emAPfYgsQRn4MA/edit?utm_content=DAGKnNAKE5c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Click para ver más</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+            <aside class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sobre el Autor</h5>
+                        <p>Nombre: July</p>
+                        <p>Contacto: +44 07354661482</p>
+                        <p>Correo: julypro2600@gmail.com</p>
+                        <p>Institución: Skolmi</p>
+                        <img src="/mnt/data/🎉🎉🎈.jpeg" alt="Imagen del Autor" class="img-fluid">
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 July. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
